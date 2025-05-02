@@ -1,0 +1,29 @@
+.navbar{
+    background-color: rgba(255, 72, 6, 0.866);
+    color: #f5e7e7;
+    padding: 10px;
+    font-size: 20px;
+
+}
+.container-fluid{
+    background-color: rgba(255, 72, 6, 0.866);
+    text-shadow: #f5e7e7;
+}
+.navbar>ul>li:hover{
+    cursor: ;}
+
+.navbar-brand{
+    font-size: 30px;
+    color: rgb(243, 243, 235);
+   
+
+}
+
+
+
+body{
+    background-color: #f0b564;
+}
+
+
+
