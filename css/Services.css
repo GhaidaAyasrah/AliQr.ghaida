@@ -1,5 +1,5 @@
 body{
-    background-color: #e3770a;
+    background-color: #f0b564;
 }
 
 .footer{
@@ -18,18 +18,52 @@ body{
     text-align: center;
     padding: 20px;
     font-size: 30px;
-    color: white;
+    color: rgb(250, 245, 245);
 }
 .services{
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     
-color: white;
+color: #f4eeee;
 }
 .services>ul>li{
     list-style-type: none;
     margin: 10px 0;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
+    padding: 5px;
+}
+.services>ul>li:hover{
+    cursor: pointer;
+    color: #e9730d;
+    text-shadow: 0 0 10px #f7f1f1, 0 0 20px #f5e7e7, 0 0 30px #f5e7e7;
+}
+.servicesform{
+    text-decoration: none;
+    color: #f5e7e7;
+}
+.navbar{
+    background-color: rgba(255, 172, 6, 0.866);
+    color: #f5e7e7;
     padding: 10px;
+    font-size: 20px;
+    text-align: center;
+
+}
+.container-fluid{
+    background-color: rgba(255, 172, 6, 0.866);
+    text-shadow: #f5e7e7;
+    text-align: center;
+    align-items: center;
+}
+.navbar>ul>li:hover{
+    cursor: pointer;
+
+    }
+
+.navbar-brand{
+    font-size: 30px;
+    color: rgb(243, 243, 235);
+   
+
 }

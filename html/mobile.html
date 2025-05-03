@@ -12,7 +12,7 @@
     <!-- Header Section -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Ali Qr Mobile Center</a>
+    <a class="navbar-brand" href="/html/mobile.html">Ali Qr Mobile Center</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -22,7 +22,9 @@
           <a class="nav-link active" aria-current="page" href="/html/mobile.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/container/Services.html">Services</a>
+         <a class="nav-link" href="/container/Services.html">Services
+          
+          </a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,6 +46,7 @@
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
     </div>
+   
   </div>
 </nav>
 <!--main content-->
@@ -53,8 +56,10 @@
         <br>
         <p>Your one-stop solution for all mobile needs.</p>
           <br>
-        <p>We offer a wide range of services including:</p>
-        <button class="contact" onclick="scrollToProducts()">Contact Us</button>
+        
+        <button  id="contactbtn" onclick="contactbtn()">Contact Us</button>
+        <br>
+
         
     </div>
 
@@ -71,6 +76,7 @@
 
     </div>
 </div>
+
 <!-- phones -->
 <div id="phones">
     <h2>Latest Phones</h2>
@@ -78,23 +84,31 @@
   <div class="phones-container">
     <div class="buyphone">
         <img src="/images/iphone.png" alt="Phone 1">
-        <p>Iphone</p>
+        <h1>Iphone</h1>
+        <p>420$</p>
+
         <button class="btn btn-primary">Buy Now</button>
 
     </div>
     <div class="buyphone">
         <img src="/images/Samsung-Galaxy-Transparent.png" alt="Phone 2">
-        <p>Samsung</p>
+        
+        <h1>Samsung</h1>
+        <p>350$</p>
         <button class="btn btn-primary">Buy Now</button>
     </div>
     <div class="buyphone">
         <img src="/images/infinx.png" alt="Phone 3">
-        <p>Infinx</p>
+        
+        <h1>Infinx</h1>
+        <p>300$</p>
         <button class="btn btn-primary">Buy Now</button>
     </div>
     <div class="buyphone">
       <img src="/images/HONOR_X6b_Green3.png" alt="Phone 3">
-      <p>Honor</p>
+      
+      <h1>Honor</h1>
+      <p>250$</p>
       <button class="btn btn-primary">Buy Now</button>
   </div>
   </div>
@@ -110,6 +124,6 @@
         <p>&copy; 2025 Ali QR Mobile Center. All rights reserved.</p>
     </footer>
 </div>
-<script src="js/mobile.js"></script>
+<script src="/js/mobile.js"></script>
 </body>
 </html>
