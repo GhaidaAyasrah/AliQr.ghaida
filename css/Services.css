@@ -1,10 +1,76 @@
-body{
+/* ========== General Styles ========== */
+body {
     background-color: #f0b564;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.footer{
+/* ========== Header Section ========== */
+.header {
+    background-color: #f0b564;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    color: rgb(250, 245, 245);
+}
+
+/* ========== Services Section ========== */
+.services {
+    text-align: center;
+    padding: 20px;
+    color: #f4eeee;
+}
+
+.services > ul > li {
+    list-style-type: none;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+    transition: all 0.3s ease; /* Added smooth transition effect */
+}
+
+.services > ul > li:hover {
+    cursor: pointer;
+    color: #e9730d;
+    text-shadow: 0 0 10px #f7f1f1, 0 0 20px #f5e7e7, 0 0 30px #f5e7e7;
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.servicesform {
+    text-decoration: none;
+    color: #f5e7e7;
+}
+
+/* ========== Navbar Section ========== */
+.navbar {
+    background-color: rgba(255, 172, 6, 0.866);
+    color: #f5e7e7;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.container-fluid {
+    background-color: rgba(255, 172, 6, 0.866);
+    text-shadow: #f5e7e7;
+    text-align: center;
+    align-items: center;
+}
+
+.navbar > ul > li:hover {
+    cursor: pointer;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    color: rgb(243, 243, 235);
+}
+
+/* ========== Footer Section ========== */
+.footer {
     background-color: rgb(22, 10, 6);
-    
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -12,58 +78,24 @@ body{
     text-align: center;
     color: white;
     font-size: 20px;
+    line-height: 50px;
 }
-.header{
-    background-color: #f0b564;
-    text-align: center;
-    padding: 20px;
-    font-size: 30px;
-    color: rgb(250, 245, 245);
-}
-.services{
-    text-align: center;
-    padding: 10px;
-    
-color: #f4eeee;
-}
-.services>ul>li{
-    list-style-type: none;
-    margin: 10px 0;
-    text-align: center;
-    font-size: 30px;
-    padding: 5px;
-}
-.services>ul>li:hover{
-    cursor: pointer;
-    color: #e9730d;
-    text-shadow: 0 0 10px #f7f1f1, 0 0 20px #f5e7e7, 0 0 30px #f5e7e7;
-}
-.servicesform{
-    text-decoration: none;
-    color: #f5e7e7;
-}
-.navbar{
-    background-color: rgba(255, 172, 6, 0.866);
-    color: #f5e7e7;
-    padding: 10px;
-    font-size: 20px;
-    text-align: center;
 
-}
-.container-fluid{
-    background-color: rgba(255, 172, 6, 0.866);
-    text-shadow: #f5e7e7;
-    text-align: center;
-    align-items: center;
-}
-.navbar>ul>li:hover{
-    cursor: pointer;
-
+/* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+    .header {
+        font-size: 24px;
     }
 
-.navbar-brand{
-    font-size: 30px;
-    color: rgb(243, 243, 235);
-   
+    .services > ul > li {
+        font-size: 25px;
+    }
 
+    .footer {
+        font-size: 18px;
+    }
+
+    .navbar {
+        font-size: 18px;
+    }
 }

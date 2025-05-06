@@ -1,15 +1,27 @@
-body{
+/* ========== General ========== */
+body {
     background-color: #f0b564;
-}
-#about{
-text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* ========== About Section ========== */
+  #about {
+    text-align: center;
     margin-top: 100px;
     font-size: 20px;
     color: white;
-}
-.footer{
+    padding: 20px;
+  }
+  
+  #about p {
+    margin-bottom: 20px;
+  }
+  
+  /* ========== Footer ========== */
+  .footer {
     background-color: rgb(22, 10, 6);
-    
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -17,27 +29,47 @@ text-align: center;
     text-align: center;
     color: white;
     font-size: 20px;
-}
-.navbar{
+    line-height: 50px;
+  }
+  
+  /* ========== Navbar ========== */
+  .navbar {
     background-color: rgba(255, 172, 6, 0.866);
     color: #f5e7e7;
     padding: 10px;
     font-size: 20px;
     text-align: center;
-
-}
-.container-fluid{
+  }
+  
+  .container-fluid {
     background-color: rgba(255, 172, 6, 0.866);
     text-shadow: #f5e7e7;
     text-align: center;
     align-items: center;
-}
-.navbar>ul>li:hover{
-    cursor: ;}
-
-.navbar-brand{
+  }
+  
+  .navbar>ul>li:hover {
+    cursor: pointer;
+  }
+  
+  .navbar-brand {
     font-size: 30px;
     color: rgb(243, 243, 235);
-   
-
-}
+  }
+  
+  /* ========== Responsive Design ========== */
+  @media (max-width: 768px) {
+    #about {
+      font-size: 18px;
+      margin-top: 80px;
+    }
+  
+    .footer {
+      font-size: 18px;
+    }
+  
+    .navbar {
+      font-size: 18px;
+    }
+  }
+  

@@ -1,60 +1,72 @@
-body{
+/* ========== General ========== */
+body {
     background-color: #f0b564;
-}
-.navbar{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* ========== Navbar ========== */
+  .navbar {
     background-color: rgba(255, 172, 6, 0.866);
     color: #f5e7e7;
     padding: 10px;
     font-size: 20px;
     text-align: center;
-
-}
-.container-fluid{
+  }
+  
+  .container-fluid {
     background-color: rgba(255, 172, 6, 0.866);
-    text-shadow: #f5e7e7;
     text-align: center;
     align-items: center;
-}
-.navbar>ul>li:hover{
+  }
+  
+  .navbar>ul>li:hover {
     cursor: pointer;
-
-    }
-
-.navbar-brand{
+  }
+  
+  .navbar-brand {
     font-size: 30px;
     color: rgb(243, 243, 235);
-   
-
-}
-#chargers{
+  }
+  
+  /* ========== Chargers Section ========== */
+  #chargers {
     text-align: center;
     font-size: larger;
     margin-top: 30px;
-}
-.chargers-container{
-    margin-top: 20px;    ;
+    padding: 0 20px;
+  }
+  
+  .chargers-container {
+    margin-top: 20px;
     display: grid;
-    grid-template-columns: auto auto auto ; 
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 30px;
-}
-.charger>img:hover{
-    cursor: pointer;
-    transform: scale(1.21);
-}
-.charger>img:active{
-    transform: scale(1);
-}
-
-.charger>h1{
-    font-size: 20px;
-    text-align: center;
-}
-.charger>img{
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .charger>img {
     width: 200px;
     height: 200px;
-    margin: 10px;
-    transition: transform 0.2s;
     margin-top: 20px;
-}
+    transition: transform 0.2s;
+    border-radius: 10px;
+  }
+  
+  .charger>img:hover {
+    cursor: pointer;
+    transform: scale(1.21);
+  }
+  
+  .charger>img:active {
+    transform: scale(1);
+  }
+  
+  .charger>h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  

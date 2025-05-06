@@ -1,10 +1,66 @@
-body{
+/* ========== General Styles ========== */
+body {
     background-color: #f0b564;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.footer{
+/* ========== Navbar Styles ========== */
+.navbar {
+    background-color: rgba(255, 172, 6, 0.866);
+    color: #f5e7e7;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.navbar > ul > li:hover {
+    cursor: pointer;
+    color: #e9730d; /* Change text color on hover */
+}
+
+.navbar-brand {
+    font-size: 30px;
+    color: rgb(243, 243, 235);
+}
+
+.navbar > ul > li > a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.navbar > ul > li > a:hover {
+    color: #e9730d; /* Change color on hover */
+}
+
+/* ========== Button Styles ========== */
+#formbtn {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 20px; /* Added padding */
+    background-color: #e9730d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added smooth transition */
+}
+
+#formbtn:hover {
+    background-color: #d86300; /* Change background color on hover */
+}
+
+#formbtn:active {
+    transform: scale(0.98); /* Add slight shrink effect when button is pressed */
+}
+
+/* ========== Footer Styles ========== */
+.footer {
     background-color: rgb(22, 10, 6);
-    
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -12,35 +68,21 @@ body{
     text-align: center;
     color: white;
     font-size: 20px;
+    line-height: 50px; /* Center the text vertically */
 }
-#formbtn{
-    margin-top: 20px;
-    font-size: 20px;
-    text-align: center;
-    align-items: center;
-}
-.navbar{
-    background-color: rgba(255, 172, 6, 0.866);
-    color: #f5e7e7;
-    padding: 10px;
-    font-size: 20px;
-    text-align: center;
 
-}
-.container-fluid{
-    background-color: rgba(255, 172, 6, 0.866);
-    text-shadow: #f5e7e7;
-    text-align: center;
-    align-items: center;
-}
-.navbar>ul>li:hover{
-    cursor: pointer;
-
+/* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 18px;
     }
 
-.navbar-brand{
-    font-size: 30px;
-    color: rgb(243, 243, 235);
-   
+    .footer {
+        font-size: 18px;
+    }
 
+    #formbtn {
+        font-size: 18px;
+        padding: 8px 16px; 
+    }
 }
