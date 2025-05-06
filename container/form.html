@@ -10,52 +10,52 @@
 <body>
     <!-- Header Section -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/html/mobile.html">Ali Qr Mobile Center</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/html/mobile.html">Home</a>
-              </li>
-              <li class="nav-item">
-               <a class="nav-link" href="/container/Services.html">Services
-                
-                </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Categories
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Computer&Tablets</a></li>
-                  <li><a class="dropdown-item" href="#">Mobiles</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Chargers</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/container/About.html" >About Us</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-         
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/html/mobile.html">Ali Qr Mobile Center</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/html/mobile.html">Home</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="/container/Services.html">Services
+              
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categories
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/html/Computer&Tablets.html">Computer&Tablets</a></li>
+                <li><a class="dropdown-item" href="#">Mobiles</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/html/chargers.html">Chargers</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/container/About.html" >About Us</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
         </div>
-      </nav>
+       
+      </div>
+    </nav>
     <!-- Main Content -->
     <div class="mb-3">
         <label for="formGroupExampleInput" class="form-label">Enter Your Name</label>
-        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="your name">
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="your name" required>
       </div>
       <div class="mb-3">
         <label for="formGroupExampleInput2" class="form-label">Enter your Mobile Number</label>
-        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="07*******">
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="07*******" required>
         </div>
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Email address</label>
@@ -63,7 +63,7 @@
           </div>
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Describe your problem </label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required></textarea>
           </div>
 
           <button type="submit"id='formbtn' class="btn btn-primary">Submit</button>
@@ -71,6 +71,6 @@
          <footer class="footer">
             <p>&copy; 2025 Ali QR Mobile Center. All rights reserved.</p>
         </footer>
-    
+    <script src="/js/form.js" ></script>
 </body>
 </html>
