@@ -1,107 +1,108 @@
-body{
+body {
     background-color: #f0b564;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
-.navbar{
+
+/* Navbar */
+.navbar {
     background-color: rgba(255, 172, 6, 0.866);
     color: #f5e7e7;
     padding: 10px;
     font-size: 20px;
     text-align: center;
-
 }
-.container-fluid{
+.container-fluid {
     background-color: rgba(255, 172, 6, 0.866);
-    text-shadow: #f5e7e7;
     text-align: center;
     align-items: center;
 }
-.navbar>ul>li:hover{
-    cursor: pointer;
-
-    }
-
-.navbar-brand{
+.navbar-brand {
     font-size: 30px;
     color: rgb(243, 243, 235);
-   
-
+}
+.navbar-nav li:hover {
+    cursor: pointer;
 }
 
-#Computermain{
+/* Headings */
+#Computermain, #Tablets {
     text-align: center;
     font-size: larger;
     margin-top: 30px;
 }
+#Tablets {
+    margin-top: 100px;
+    font-size: 30px;
+}
+#Tablets > h1 {
+    font-size: 50px;
+}
 
-.Computers-container{
-    margin-top: 20px;    ;
+/* Containers */
+.Computers-container,
+.Tablets-container {
+    margin-top: 20px;
     display: grid;
-    grid-template-columns: auto auto auto ; 
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
     gap: 20px;
-}
-.Computer>img:hover{
-    cursor: pointer;
-    transform: scale(1.21);
-}
-.Computer>img:active{
-    transform: scale(1);
+    padding: 0 20px;
 }
 
-.Computer>h1{
-    font-size: 30px;
+/* Items */
+.Computer, .Tablet {
     text-align: center;
 }
-.Computer>img{
+.Computer > h1,
+.Tablet > h1 {
+    font-size: 30px;
+}
+.Computer > img,
+.Tablet > img {
     width: 200px;
     height: 200px;
     margin: 10px;
     transition: transform 0.2s;
-    margin-top: 20px;
 }
-#Tablets{
-    margin-top: 100px;
-    text-align: center;
-    font-size: 30px;
-}
-#Tablets>h1{
-    font-size: 50px;
-    text-align: center;
-}
-.Tablet>img{
-    width: 200px;
-    height: 200px;
-    margin: 20px;
-    transition: transform 0.2s;
-    margin-top: 20px;
-}
-
-.Tablets-container{
-
-   margin-top: 20px;    ;
-    display: grid;
-    grid-template-columns: auto auto auto ; 
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 40px; 
-}
-.Tablet>img:hover{
+.Computer > img:hover,
+.Tablet > img:hover {
     cursor: pointer;
-    transform: scale(1.21);
+    transform: scale(1.1);
 }
-.Tablet>img:active{
+.Computer > img:active,
+.Tablet > img:active {
     transform: scale(1);
 }
 
-.Tablet>h1{
-    font-size: 30px;
-    text-align: center;
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+    .Computers-container,
+    .Tablets-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
-.Tablet>img{
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-    transition: transform 0.2s;
-    margin-top: 20px;}
+
+@media screen and (max-width: 576px) {
+    .Computers-container,
+    .Tablets-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .Computer > img,
+    .Tablet > img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .Computer > h1,
+    .Tablet > h1 {
+        font-size: 20px;
+    }
+
+    #Tablets > h1 {
+        font-size: 30px;
+    }
+}
